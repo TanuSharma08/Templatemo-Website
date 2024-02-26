@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0" />
+    <title>Live View Page - 524 product admin Template</title>
+    <link rel="icon" href="https://templatemo.com/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/css1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+</head>
+
+<body>
+    <nav>
+        <header>
+            <h3>Product Admin</h3>
+            <div class="header">
+                <a href="dashboard.html" class="active"><i class="fas fa-tachometer-alt"></i>Dashboard</a>
+                <a href="products.html"><i class="fas fa-shopping-cart"></i>Products</a>
+                <a href="accounts.html"><i class="far fa-user"></i>Accounts</a>
+            </div>
+            <div class="header admin">
+                <a href="login.html">
+                    <p>Admin, <b>Logout</b></p>
+                </a>
+            </div>
+        </header>
+    </nav>
+
+    <div class="container flex1">
+        <h4 class="ac">List of Accounts</h4>
+        <p class="acc">Accounts</p>
+        <select class="tb dl">
+            <option value="">Select account</option>
+            <option value="Admin">Admin</option>
+            <option value="Editor">Editor</option>
+            <option value="Merchant">Merchant</option>
+            <option value="Customer">Customer</option>
+        </select>
+    </div>
+
+    <div class="flex">
+        <div class="container flex2">
+            <h4 style="text-align:left; margin-bottom:25px;">Change Avatar</h4>
+
+            <img id="Image1" class="img"
+                src="https://templatemo.com/templates/templatemo_524_product_admin/img/avatar.png" alt="Avatar" />
+            <i class="far fa-trash-alt tm-product-delete-icon trash-button"></i>
+            <button class="button picbtn">Upload New Photo</button>
+        </div>
+
+        <div class="container flex3">
+            <h4 style="text-align:left; margin-bottom:25px;">Account Settings</h4>
+        
+            <label for="acnm">Account Name</label>
+            <input id="acnm" type="text" class="tb input" />
+
+            <label for="acemail">Account Email</label>
+            <input id="acemail" type="email" class="tb input" />
+
+            <label for="password">Password</label>
+            <input id="password" type="password" class="tb input" />
+
+            <label for="repassword">Re-enter Password</label>
+            <input id="repassword" type="password" class="tb input" />
+
+            <label for="phone">Phone</label>
+            <input id="phone" type="tel" class="tb input" />
+
+            <button id="updprofile" class="button b">Update Your Profile</button>
+            <button id="dltprofile" class="button">Delete Your Account</button>
+        </div>
+
+    </div>
+
+    <footer>
+        <center>Copyright © <b>2018</b> All rights reserved. Design: Template Mo</center>
+    </footer>
+
+</body>
+
+</html>

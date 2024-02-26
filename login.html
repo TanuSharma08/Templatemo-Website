@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Live View Page - 524 product admin Template</title>
+    <link rel="icon" href="https://templatemo.com/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/css1.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+</head>
+
+<body>
+    <nav>
+        <header>
+            <h3>Product Admin</h3>
+            <div class="header">
+                <a href="dashboard.html" class="active"><i class="fas fa-tachometer-alt"></i>Dashboard</a>
+                <a href="products.html"><i class="fas fa-shopping-cart"></i>Products</a>
+                <a href="accounts.html"><i class="far fa-user"></i>Accounts</a>
+            </div>
+        </header>
+    </nav>
+
+    <div class="container">
+        <h4>Welcome To Dashboard, Login</h4>
+
+        <label for="unm">Username</label>
+        <input type="text" id="username" name="username" class="tb" required />
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" class="tb" required />
+
+        <button type="submit" id="login" onclick="login()">Login</button>
+    </div>
+
+    <footer>
+        <center>Copyright © <b>2018</b> All rights reserved. Design: Template Mo</center>
+    </footer>
+    <script>
+        
+        function login() {
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+            
+            if (username.trim() === '' || password.trim() === '') {
+                alert('Username and password are required');
+                return;
+            }
+        
+            var users = JSON.parse(localStorage.getItem('users')) || [];
+            var user = users.find(u => u.username === username && u.password === password);
+            
+            if (user) {
+                window.location.href = 'dashboard.html';
+            } else {
+                alert('Invalid username or password');
+            }
+        }
+        
+        localStorage.setItem('users', JSON.stringify([{ username: 'admin', password: 'password' }]));
+        </script>
+</body>
+
+</html>

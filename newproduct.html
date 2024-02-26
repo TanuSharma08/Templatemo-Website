@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Live View Page - 524 product admin Template</title>
+    <link rel="icon" href="https://templatemo.com/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/css1.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+</head>
+
+<body>
+    <nav>
+        <header>
+            <h3>Product Admin</h3>
+            <div class="header">
+                <a href="dashboard.html" class="active"><i class="fas fa-tachometer-alt"></i>Dashboard</a>
+                <a href="products.html"><i class="fas fa-shopping-cart"></i>Products</a>
+                <a href="accounts.html"><i class="far fa-user"></i>Accounts</a>
+            </div>
+            <div class="header admin">
+                <a href="login.html">
+                    <p>Admin, <b>Logout</b></p>
+                </a>
+            </div>
+        </header>
+    </nav>
+
+    <div class="container">
+        <div>
+            <h2>Add Product</h2>
+
+            <label for="pnm">Product Name</label>
+            <input id="pnm" type="text" class="tb" />
+
+            <label for="desc">Description</label>
+            <textarea id="desc" rows="4" class="tb desc"></textarea>
+
+            <label for="category">Category</label>
+            <select id="category" class="tb dl">
+                <option value="">Select category</option>
+                <option value="New Arrival">New Arrival</option>
+                <option value="Most Popular">Most Popular</option>
+                <option value="Trending">Trending</option>
+            </select>
+
+            <label for="expdt">Expire Date</label>
+            <input id="expdt" type="date" class="tb" />
+
+            <label for="unistock">Units in Stock</label>
+            <input id="unistock" type="number" class="tb" />
+        </div>
+
+        <div>
+            <div></div>
+            <i class="fas fa-cloud-upload-alt tm-upload-icon"
+                onclick="document.getElementById('fileInput').click();"></i>
+            <input id="fileInput" type="file" style="display: none;" />
+            <button id="uploadimg" class="button">Upload Product Image</button>
+        </div>
+
+        <button id="addpro" class="button">Add Product Now</button>
+
+    </div>
+
+    <footer>
+        <center>Copyright © <b>2018</b> All rights reserved. Design: Template Mo</center>
+    </footer>
+
+</body>
+
+</html>
